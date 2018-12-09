@@ -26,6 +26,7 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void {
+    console.log('get Heroes is called from hero component');
     this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
   }
 }
